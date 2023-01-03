@@ -1,0 +1,38 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+defaults:
+  - override /datamodule: heichole.yaml
+  - override /model: ts.yaml
+  - override /callbacks: default.yaml
+  - override /logger: tensorboard.yaml
+  - override /trainer: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "resnet_ts"
+
+seed: 12345
+
+trainer:
+  min_epochs: 10
+  max_epochs: 50
+  gradient_clip_val: 0.3
+  gpus: 0
+
+model:
+  lr: 0.001
+
+datamodule:
+  batch_size: 8
+  seq_len: 8
+
+
+logger:
+  wandb:
+    project: "helchole_basic"
+    tags: ["mnist", "${name}"]

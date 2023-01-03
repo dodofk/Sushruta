@@ -1,0 +1,11 @@
+_target_: src.datamodules.cholect45_datamodule.CholecT45DataModule
+
+data_dir: ${data_dir} # data_dir is specified in config.yaml
+batch_size: 64
+num_workers: 0
+pin_memory: False
+
+seq_len: 1
+channels: 3
+use_train_aug: True
+triplet_class_arg: data/triplet_class_arg.npy

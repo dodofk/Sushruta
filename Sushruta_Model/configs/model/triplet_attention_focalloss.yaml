@@ -1,0 +1,49 @@
+_target_: src.models.triplet_attention_focalloss.TripletAttentionModule
+use_pretrained: True
+backbone_model: swin_tiny_patch4_window7_224
+
+backbone_trainable: True
+
+temporal_cfg:
+  type: GRU #GRU LSTM RNN
+  hidden_size: 512
+  num_layers: 1
+  bidirectional: False
+
+tool_component:
+  hidden_dim_size: 2
+  dropout_ratio: 0.1
+
+target_tool_attention:
+  num_heads: 4
+
+emb_dim: 256
+
+fbce_hyper:
+  tool:
+    gamma: 2
+  verb:
+    gamma: 2
+  target:
+    gamma: 2
+  triplet:
+    gamma: 2
+
+optim:
+  optim_name: AdamW
+  lr: 0.0002
+  weight_decay: 0.05
+  scheduler_name: CosineAnnealingLR
+  scheduler:
+    T_max: 10
+
+loss_weight:
+  tool_weight: 0.75
+  target_weight: 1.0
+  verb_weight: 1.0
+  triplet_weight: 1.25
+
+
+
+triplet_map: "./data/CholecT45/dict/maps.txt"
+pos_weight_dir: "./data/pos_weight"

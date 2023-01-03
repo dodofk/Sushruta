@@ -1,0 +1,83 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+# python train.py -m experiment=base_gpu hydra/sweeper=optuna
+
+defaults:
+  - override /datamodule: cholect45.yaml
+  - override /model: triplet_attention_focalloss.yaml
+  - override /callbacks: default.yaml
+  - override /logger: wandb.yaml
+  - override /trainer: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "cholect45_attention"
+
+seed: 12345
+
+trainer:
+  min_epochs: 10
+  max_epochs: 50
+  gradient_clip_val: 0.5
+  gpus: 1
+  precision: 16
+  accelerator: gpu
+  accumulate_grad_batches: 4
+
+model:
+  backbone_model: swin_tiny_patch4_window7_224
+  optim:
+    lr: 0.0002
+    weight_decay: 0.1
+
+  fbce_hyper:
+    tool:
+      gamma: 2
+    verb:
+      gamma: 2
+    target:
+      gamma: 2
+    triplet:
+      gamma: 2
+
+  emb_dim: 128
+
+  backbone_trainable: False
+
+  temporal_cfg:
+    type: GRU
+    hidden_size: 256
+    num_layers: 1
+
+  loss_weight:
+    tool_weight: 0.7
+    target_weight: 1.1
+    verb_weight: 0.9
+    triplet_weight: 1.25
+
+  tool_component:
+    dropout_ratio: 0.25
+
+  target_tool_attention:
+    num_heads: 2
+    dropout: 0.1
+
+callback:
+  model_checkpoint:
+    monitor: valid/ivt_mAP
+  early_stopping:
+    monitor: valid/ivt_mAP
+
+datamodule:
+  batch_size: 32
+  seq_len: 2
+
+logger:
+  wandb:
+    project: "cholect45"
+    tags: ["cross-attention", "${name}"]

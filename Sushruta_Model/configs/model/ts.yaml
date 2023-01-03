@@ -1,0 +1,26 @@
+_target_: src.models.ts_module.ResnetTSModule
+optim: Adam
+lr: 0.001
+weight_decay: 0.0005
+task: phase
+use_timm: True
+backbone_model: resnet34
+
+mlp:
+  hidden_size: 512
+
+# temporal_cfg:
+#   type: GRU #GRU LSTM RNN (not yet implement TCN)
+#   hidden_size: 1024
+#   num_layers: 1
+#   bidirectional: False
+
+
+temporal_cfg:
+  type: TCN
+  spatial_feat_dim: 32
+  n_hid: 128
+  kernel_size: 7
+  dropout: 0.25
+  levels: 8
+  bidirectional: False
