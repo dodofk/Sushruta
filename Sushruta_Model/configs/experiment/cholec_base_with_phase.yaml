@@ -1,0 +1,57 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+# python train.py -m experiment=base_gpu hydra/sweeper=optuna
+
+defaults:
+  - override /datamodule: cholect45.yaml
+  - override /model: cholec_baseline_with_phase.yaml
+  - override /callbacks: default.yaml
+  - override /logger: wandb.yaml
+  - override /trainer: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "cholect45_basic"
+
+seed: 12345
+
+trainer:
+  min_epochs: 10
+  max_epochs: 50
+  gradient_clip_val: 0.5
+  gpus: 1
+  precision: 16
+  accelerator: gpu
+  accumulate_grad_batches: 4
+
+model:
+  backbone_model: swin_tiny_patch4_window7_224
+  backbone_trainable: True
+  optim:
+    lr: 0.0002
+
+  temporal_cfg:
+    type: GRU
+    hidden_size: 512
+    num_layers: 1
+
+callback:
+  model_checkpoint:
+    monitor: valid/ivt_mAP
+  early_stopping:
+    monitor: valid/ivt_mAP
+
+datamodule:
+  batch_size: 64
+  seq_len: 2
+  use_train_aug: False
+
+logger:
+  wandb:
+    project: "cholect45"
+    tags: ["baseline", "${name}"]

@@ -1,0 +1,39 @@
+# @package _global_
+
+# to execute this experiment run:
+# python train.py experiment=example
+
+# python train.py -m experiment=base_gpu hydra/sweeper=optuna
+
+defaults:
+  - override /datamodule: heichole.yaml
+  - override /model: baseline.yaml
+  - override /callbacks: default.yaml
+  - override /logger: wandb.yaml
+  - override /trainer: default.yaml
+
+# all parameters below will be merged with parameters from default configurations set above
+# this allows you to overwrite only specified parameters
+
+# name of the run determines folder name in logs
+name: "helchole_basic"
+
+seed: 12345
+
+trainer:
+  min_epochs: 10
+  max_epochs: 50
+  gradient_clip_val: 0.5
+  gpus: 1
+  precision: 16
+  accelerator: gpu
+  accumulate_grad_batches: 4
+
+model:
+  lr: 0.0002
+  weight_decay: 0.001
+
+
+datamodule:
+  batch_size: 32
+  seq_len: 1

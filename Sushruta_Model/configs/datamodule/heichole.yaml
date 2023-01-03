@@ -1,0 +1,12 @@
+_target_: src.datamodules.heichole_datamodule.HeiCholeDataModule
+
+data_dir: ${data_dir} # data_dir is specified in config.yaml
+batch_size: 64
+num_workers: 0
+pin_memory: False
+
+seq_len: 1
+channels: 3
+
+sample_base_on: null
+sample_num: 500

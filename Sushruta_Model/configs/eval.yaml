@@ -1,0 +1,9 @@
+ckpt_path: ???
+output_fname: ???
+device: "cuda"
+batch_size: 64
+rand_ratio: 0.1
+seed: 12345
+random_aug: True
+is_combined: False
+use_combined_logit: False

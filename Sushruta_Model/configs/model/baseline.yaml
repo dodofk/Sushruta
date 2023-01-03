@@ -1,0 +1,11 @@
+_target_: src.models.baseline_module.BaselineModule
+optim: Adam
+lr: 0.001
+weight_decay: 0.0005
+task: phase
+use_timm: True
+backbone_model: resnet34
+
+mlp:
+  hidden_size: 512
+

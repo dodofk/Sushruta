@@ -1,0 +1,26 @@
+_target_: src.models.cholec_baseline_combined_module.TripletBaselineModule
+use_timm: True
+backbone_model: swin_base_patch4_window7_224_in22k
+backbone_trainable: True
+
+temporal_cfg:
+  type: GRU #GRU LSTM RNN
+  hidden_size: 512
+  num_layers: 1
+  bidirectional: False
+
+optim:
+  optim_name: AdamW
+  lr: 0.001
+  weight_decay: 0.05
+  scheduler_name: CosineAnnealingLR
+  scheduler:
+    T_max: 10
+
+loss_weight:
+  tool_weight: 0.75
+  target_weight: 1.0
+  verb_weight: 1.0
+  triplet_weight: 1.25
+
+triplet_map: "./data/CholecT45/dict/maps.txt"
