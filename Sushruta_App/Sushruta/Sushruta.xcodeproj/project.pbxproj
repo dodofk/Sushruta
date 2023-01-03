@@ -1,0 +1,682 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8D26C299294917E500E6C7D9 /*  FinalReportDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D26C298294917E500E6C7D9 /*  FinalReportDemo.swift */; };
+		8D6CDF5F291BE0B6002D56FB /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D6CDF5E291BE0B6002D56FB /* Movie.swift */; };
+		8DA41FD72924AFD5007859F5 /* SurgeryRecord.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DA41FD62924AFD5007859F5 /* SurgeryRecord.swift */; };
+		8DA41FDA2924D491007859F5 /* Ganttis.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA41FD92924D491007859F5 /* Ganttis.xcframework */; };
+		8DA41FDB2924D491007859F5 /* Ganttis.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 8DA41FD92924D491007859F5 /* Ganttis.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		8DB3C6ED28F6E1CF00CADE2F /* FrameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3C6EC28F6E1CF00CADE2F /* FrameView.swift */; };
+		8DB3C6EF28F6E1E200CADE2F /* FrameHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3C6EE28F6E1E200CADE2F /* FrameHandler.swift */; };
+		8DB3C6F128F6E1FC00CADE2F /* VisionClassificationHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3C6F028F6E1FC00CADE2F /* VisionClassificationHandler.swift */; };
+		8DB3C6F328F6E22900CADE2F /* Resnet50FP16.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3C6F228F6E22900CADE2F /* Resnet50FP16.mlmodel */; };
+		8DB3C6F728F6E9EE00CADE2F /* yolov5s.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8DB3C6F628F6E9EE00CADE2F /* yolov5s.mlmodel */; };
+		8DEDA85E291BD21500520EC8 /* ContentViewVideo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEDA85D291BD21500520EC8 /* ContentViewVideo.swift */; };
+		8DEDA860291BD21A00520EC8 /* ContentViewCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEDA85F291BD21A00520EC8 /* ContentViewCamera.swift */; };
+		8DEDA862291BD25D00520EC8 /* HistoryMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEDA861291BD25D00520EC8 /* HistoryMessageView.swift */; };
+		8DEDA864291BD3A200520EC8 /* Surgery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEDA863291BD3A200520EC8 /* Surgery.swift */; };
+		8DEDA866291BD3A600520EC8 /* SurgeryRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DEDA865291BD3A600520EC8 /* SurgeryRow.swift */; };
+		D13485B128E32B110037DD41 /* SushrutaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13485B028E32B110037DD41 /* SushrutaApp.swift */; };
+		D13485B528E32B120037DD41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13485B428E32B120037DD41 /* Assets.xcassets */; };
+		D13485B828E32B120037DD41 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D13485B728E32B120037DD41 /* Preview Assets.xcassets */; };
+		D13485C228E32B120037DD41 /* SushrutaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13485C128E32B120037DD41 /* SushrutaTests.swift */; };
+		D13485CC28E32B120037DD41 /* SushrutaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13485CB28E32B120037DD41 /* SushrutaUITests.swift */; };
+		D13485CE28E32B120037DD41 /* SushrutaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13485CD28E32B120037DD41 /* SushrutaUITestsLaunchTests.swift */; };
+		D1B0327F28ECD1650054DCF3 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B0327E28ECD1650054DCF3 /* DetailView.swift */; };
+		D1B0328128EDAADF0054DCF3 /* FinalReportView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B0328028EDAADF0054DCF3 /* FinalReportView.swift */; };
+		D1B0328328EDB30E0054DCF3 /* testing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B0328228EDB30E0054DCF3 /* testing.swift */; };
+		D1C0F6A528F416DC008373DD /* FrontPageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1C0F6A428F416DC008373DD /* FrontPageView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D13485BE28E32B120037DD41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13485A528E32B110037DD41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13485AC28E32B110037DD41;
+			remoteInfo = Sushruta;
+		};
+		D13485C828E32B120037DD41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D13485A528E32B110037DD41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D13485AC28E32B110037DD41;
+			remoteInfo = Sushruta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DA41FDC2924D491007859F5 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				8DA41FDB2924D491007859F5 /* Ganttis.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		8D26C298294917E500E6C7D9 /*  FinalReportDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = " FinalReportDemo.swift"; sourceTree = "<group>"; };
+		8D6CDF5E291BE0B6002D56FB /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		8DA41FD62924AFD5007859F5 /* SurgeryRecord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SurgeryRecord.swift; sourceTree = "<group>"; };
+		8DA41FD92924D491007859F5 /* Ganttis.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Ganttis.xcframework; path = ../../../../Downloads/Ganttis/Ganttis.xcframework; sourceTree = "<group>"; };
+		8DB3C6EC28F6E1CF00CADE2F /* FrameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameView.swift; sourceTree = "<group>"; };
+		8DB3C6EE28F6E1E200CADE2F /* FrameHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrameHandler.swift; sourceTree = "<group>"; };
+		8DB3C6F028F6E1FC00CADE2F /* VisionClassificationHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisionClassificationHandler.swift; sourceTree = "<group>"; };
+		8DB3C6F228F6E22900CADE2F /* Resnet50FP16.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Resnet50FP16.mlmodel; sourceTree = SOURCE_ROOT; };
+		8DB3C6F628F6E9EE00CADE2F /* yolov5s.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = yolov5s.mlmodel; sourceTree = SOURCE_ROOT; };
+		8DEDA85D291BD21500520EC8 /* ContentViewVideo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewVideo.swift; sourceTree = "<group>"; };
+		8DEDA85F291BD21A00520EC8 /* ContentViewCamera.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewCamera.swift; sourceTree = "<group>"; };
+		8DEDA861291BD25D00520EC8 /* HistoryMessageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HistoryMessageView.swift; sourceTree = "<group>"; };
+		8DEDA863291BD3A200520EC8 /* Surgery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Surgery.swift; sourceTree = "<group>"; };
+		8DEDA865291BD3A600520EC8 /* SurgeryRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SurgeryRow.swift; sourceTree = "<group>"; };
+		D13485AD28E32B110037DD41 /* Sushruta.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sushruta.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13485B028E32B110037DD41 /* SushrutaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushrutaApp.swift; sourceTree = "<group>"; };
+		D13485B428E32B120037DD41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D13485B728E32B120037DD41 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		D13485BD28E32B120037DD41 /* SushrutaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushrutaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13485C128E32B120037DD41 /* SushrutaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushrutaTests.swift; sourceTree = "<group>"; };
+		D13485C728E32B120037DD41 /* SushrutaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SushrutaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D13485CB28E32B120037DD41 /* SushrutaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushrutaUITests.swift; sourceTree = "<group>"; };
+		D13485CD28E32B120037DD41 /* SushrutaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SushrutaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D1B0327E28ECD1650054DCF3 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		D1B0328028EDAADF0054DCF3 /* FinalReportView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalReportView.swift; sourceTree = "<group>"; };
+		D1B0328228EDB30E0054DCF3 /* testing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testing.swift; sourceTree = "<group>"; };
+		D1C0F6A428F416DC008373DD /* FrontPageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontPageView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D13485AA28E32B110037DD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8DA41FDA2924D491007859F5 /* Ganttis.xcframework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13485BA28E32B120037DD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13485C428E32B120037DD41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8DA41FD82924D490007859F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8DA41FD92924D491007859F5 /* Ganttis.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D13485A428E32B110037DD41 = {
+			isa = PBXGroup;
+			children = (
+				D13485AF28E32B110037DD41 /* Sushruta */,
+				D13485C028E32B120037DD41 /* SushrutaTests */,
+				D13485CA28E32B120037DD41 /* SushrutaUITests */,
+				D13485AE28E32B110037DD41 /* Products */,
+				8DA41FD82924D490007859F5 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D13485AE28E32B110037DD41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D13485AD28E32B110037DD41 /* Sushruta.app */,
+				D13485BD28E32B120037DD41 /* SushrutaTests.xctest */,
+				D13485C728E32B120037DD41 /* SushrutaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D13485AF28E32B110037DD41 /* Sushruta */ = {
+			isa = PBXGroup;
+			children = (
+				8D6CDF5E291BE0B6002D56FB /* Movie.swift */,
+				8DB3C6F628F6E9EE00CADE2F /* yolov5s.mlmodel */,
+				8DB3C6F228F6E22900CADE2F /* Resnet50FP16.mlmodel */,
+				D13485B028E32B110037DD41 /* SushrutaApp.swift */,
+				8DB3C6EC28F6E1CF00CADE2F /* FrameView.swift */,
+				8DEDA85D291BD21500520EC8 /* ContentViewVideo.swift */,
+				8DEDA85F291BD21A00520EC8 /* ContentViewCamera.swift */,
+				8D26C298294917E500E6C7D9 /*  FinalReportDemo.swift */,
+				8DB3C6EE28F6E1E200CADE2F /* FrameHandler.swift */,
+				8DB3C6F028F6E1FC00CADE2F /* VisionClassificationHandler.swift */,
+				8DEDA861291BD25D00520EC8 /* HistoryMessageView.swift */,
+				D1B0327E28ECD1650054DCF3 /* DetailView.swift */,
+				D1B0328028EDAADF0054DCF3 /* FinalReportView.swift */,
+				8DEDA865291BD3A600520EC8 /* SurgeryRow.swift */,
+				D1B0328228EDB30E0054DCF3 /* testing.swift */,
+				D1C0F6A428F416DC008373DD /* FrontPageView.swift */,
+				8DEDA863291BD3A200520EC8 /* Surgery.swift */,
+				D13485B428E32B120037DD41 /* Assets.xcassets */,
+				D13485B628E32B120037DD41 /* Preview Content */,
+				8DA41FD62924AFD5007859F5 /* SurgeryRecord.swift */,
+			);
+			path = Sushruta;
+			sourceTree = "<group>";
+		};
+		D13485B628E32B120037DD41 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				D13485B728E32B120037DD41 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		D13485C028E32B120037DD41 /* SushrutaTests */ = {
+			isa = PBXGroup;
+			children = (
+				D13485C128E32B120037DD41 /* SushrutaTests.swift */,
+			);
+			path = SushrutaTests;
+			sourceTree = "<group>";
+		};
+		D13485CA28E32B120037DD41 /* SushrutaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D13485CB28E32B120037DD41 /* SushrutaUITests.swift */,
+				D13485CD28E32B120037DD41 /* SushrutaUITestsLaunchTests.swift */,
+			);
+			path = SushrutaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D13485AC28E32B110037DD41 /* Sushruta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13485D128E32B120037DD41 /* Build configuration list for PBXNativeTarget "Sushruta" */;
+			buildPhases = (
+				D13485A928E32B110037DD41 /* Sources */,
+				D13485AA28E32B110037DD41 /* Frameworks */,
+				D13485AB28E32B110037DD41 /* Resources */,
+				8DA41FDC2924D491007859F5 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Sushruta;
+			productName = Sushruta;
+			productReference = D13485AD28E32B110037DD41 /* Sushruta.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D13485BC28E32B120037DD41 /* SushrutaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13485D428E32B120037DD41 /* Build configuration list for PBXNativeTarget "SushrutaTests" */;
+			buildPhases = (
+				D13485B928E32B120037DD41 /* Sources */,
+				D13485BA28E32B120037DD41 /* Frameworks */,
+				D13485BB28E32B120037DD41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D13485BF28E32B120037DD41 /* PBXTargetDependency */,
+			);
+			name = SushrutaTests;
+			productName = SushrutaTests;
+			productReference = D13485BD28E32B120037DD41 /* SushrutaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D13485C628E32B120037DD41 /* SushrutaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D13485D728E32B120037DD41 /* Build configuration list for PBXNativeTarget "SushrutaUITests" */;
+			buildPhases = (
+				D13485C328E32B120037DD41 /* Sources */,
+				D13485C428E32B120037DD41 /* Frameworks */,
+				D13485C528E32B120037DD41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D13485C928E32B120037DD41 /* PBXTargetDependency */,
+			);
+			name = SushrutaUITests;
+			productName = SushrutaUITests;
+			productReference = D13485C728E32B120037DD41 /* SushrutaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D13485A528E32B110037DD41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					D13485AC28E32B110037DD41 = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					D13485BC28E32B120037DD41 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = D13485AC28E32B110037DD41;
+					};
+					D13485C628E32B120037DD41 = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = D13485AC28E32B110037DD41;
+					};
+				};
+			};
+			buildConfigurationList = D13485A828E32B110037DD41 /* Build configuration list for PBXProject "Sushruta" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D13485A428E32B110037DD41;
+			productRefGroup = D13485AE28E32B110037DD41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D13485AC28E32B110037DD41 /* Sushruta */,
+				D13485BC28E32B120037DD41 /* SushrutaTests */,
+				D13485C628E32B120037DD41 /* SushrutaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D13485AB28E32B110037DD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13485B828E32B120037DD41 /* Preview Assets.xcassets in Resources */,
+				D13485B528E32B120037DD41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13485BB28E32B120037DD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13485C528E32B120037DD41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D13485A928E32B110037DD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8D26C299294917E500E6C7D9 /*  FinalReportDemo.swift in Sources */,
+				8DEDA860291BD21A00520EC8 /* ContentViewCamera.swift in Sources */,
+				8DEDA866291BD3A600520EC8 /* SurgeryRow.swift in Sources */,
+				D1B0327F28ECD1650054DCF3 /* DetailView.swift in Sources */,
+				D1B0328128EDAADF0054DCF3 /* FinalReportView.swift in Sources */,
+				D13485B128E32B110037DD41 /* SushrutaApp.swift in Sources */,
+				8DB3C6F728F6E9EE00CADE2F /* yolov5s.mlmodel in Sources */,
+				8D6CDF5F291BE0B6002D56FB /* Movie.swift in Sources */,
+				D1B0328328EDB30E0054DCF3 /* testing.swift in Sources */,
+				8DEDA85E291BD21500520EC8 /* ContentViewVideo.swift in Sources */,
+				8DA41FD72924AFD5007859F5 /* SurgeryRecord.swift in Sources */,
+				8DB3C6ED28F6E1CF00CADE2F /* FrameView.swift in Sources */,
+				8DB3C6EF28F6E1E200CADE2F /* FrameHandler.swift in Sources */,
+				8DB3C6F328F6E22900CADE2F /* Resnet50FP16.mlmodel in Sources */,
+				8DEDA862291BD25D00520EC8 /* HistoryMessageView.swift in Sources */,
+				8DEDA864291BD3A200520EC8 /* Surgery.swift in Sources */,
+				8DB3C6F128F6E1FC00CADE2F /* VisionClassificationHandler.swift in Sources */,
+				D1C0F6A528F416DC008373DD /* FrontPageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13485B928E32B120037DD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13485C228E32B120037DD41 /* SushrutaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D13485C328E32B120037DD41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D13485CE28E32B120037DD41 /* SushrutaUITestsLaunchTests.swift in Sources */,
+				D13485CC28E32B120037DD41 /* SushrutaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D13485BF28E32B120037DD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13485AC28E32B110037DD41 /* Sushruta */;
+			targetProxy = D13485BE28E32B120037DD41 /* PBXContainerItemProxy */;
+		};
+		D13485C928E32B120037DD41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D13485AC28E32B110037DD41 /* Sushruta */;
+			targetProxy = D13485C828E32B120037DD41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		D13485CF28E32B120037DD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D13485D028E32B120037DD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D13485D228E32B120037DD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sushruta/Preview Content\"";
+				DEVELOPMENT_TEAM = P3M366SWW5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Sushruta uses camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Dodofk.Sushruta;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D13485D328E32B120037DD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Sushruta/Preview Content\"";
+				DEVELOPMENT_TEAM = P3M366SWW5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "Sushruta uses camera";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dodofk;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D13485D528E32B120037DD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hsiangan.SushrutaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sushruta.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sushruta";
+			};
+			name = Debug;
+		};
+		D13485D628E32B120037DD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hsiangan.SushrutaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sushruta.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Sushruta";
+			};
+			name = Release;
+		};
+		D13485D828E32B120037DD41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hsiangan.SushrutaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sushruta;
+			};
+			name = Debug;
+		};
+		D13485D928E32B120037DD41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Hsiangan.SushrutaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Sushruta;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D13485A828E32B110037DD41 /* Build configuration list for PBXProject "Sushruta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13485CF28E32B120037DD41 /* Debug */,
+				D13485D028E32B120037DD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13485D128E32B120037DD41 /* Build configuration list for PBXNativeTarget "Sushruta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13485D228E32B120037DD41 /* Debug */,
+				D13485D328E32B120037DD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13485D428E32B120037DD41 /* Build configuration list for PBXNativeTarget "SushrutaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13485D528E32B120037DD41 /* Debug */,
+				D13485D628E32B120037DD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D13485D728E32B120037DD41 /* Build configuration list for PBXNativeTarget "SushrutaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D13485D828E32B120037DD41 /* Debug */,
+				D13485D928E32B120037DD41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D13485A528E32B110037DD41 /* Project object */;
+}
