@@ -1,3 +1,1 @@
-# for f in tool/data/*.mp4; do python tool/track_box_2_sec.py --source "$f" --yolo_model tool/models/best.pt --save_dir tool/output --save-box ; done 
-# python tool/track_box_2_sec.py --source "tool/data/Hei-Chole1_Trim.mp4" --yolo_model tool/models/best.pt --save_dir tool/output --conf-thres 0.2
-python tool/track_box_2_sec.py --source "tool/data/Hei-Chole1_Train.mp4" --yolo_model detect/yolov5/tool_yolov5/exp/weights/best.pt --save_dir tool/output --conf-thres 0.1
+python inference/track_box_2_sec.py --source "inference/data/Hei-Chole1_Trim.mp4" --yolo_model inference/checkpoint/best.pt --save_dir inference/output --conf-thres 0.1

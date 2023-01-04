@@ -82,3 +82,9 @@ python train.py experiment=triplet_attention_base
 # train on GPU (our baselien model)
 python train.py experiment=cholec_base
 ```
+### Inference
+For inferencing Cholec video,  the result will save at inferece/output folder
+
+```bash
+bash inference/cutt.sh
+```
