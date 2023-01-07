@@ -26,3 +26,17 @@ Sushruta App 包含使用了 Swift 撰寫的 IOS IPad App，讓醫生可以方�
 
 Report.pdf 是資管專題報告的投影片，可以參考投影片中的內容知道我們這專案的主要價值和貢獻。
 
+## Contact
+### Project member
+歐崇愷: b08303028@ntu.edu.tw
+劉鈺祥: b08705024@ntu.edu.tw
+莊翔安: b08303028@ntu.edu.tw
+陳旻浚: b08705051@ntu.edu.tw
+
+### Advisor
+李家岩教授: chiayenlee@ntu.edu.tw
+
+### Mentor
+歐子毓: a1225johnny@gmail.com
+
+Welcome to contact us contact us with above information!
