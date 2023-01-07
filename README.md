@@ -28,10 +28,10 @@ Report.pdf 是資管專題報告的投影片，可以參考投影片中的內容
 
 ## Contact
 ### Project member
-歐崇愷: b08303028@ntu.edu.tw //
-劉鈺祥: b08705024@ntu.edu.tw //
-莊翔安: b08303028@ntu.edu.tw //
-陳旻浚: b08705051@ntu.edu.tw //
+- 歐崇愷: b08303028@ntu.edu.tw 
+- 劉鈺祥: b08705024@ntu.edu.tw 
+- 莊翔安: b08303028@ntu.edu.tw 
+- 陳旻浚: b08705051@ntu.edu.tw 
 
 ### Advisor
 李家岩教授: chiayenlee@ntu.edu.tw
